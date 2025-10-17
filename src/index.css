@@ -17,3 +17,13 @@
   font-weight: 400;
   font-style: normal;
 }
+
+a.active{
+  background-color: #E7E7E7;
+  padding: 10px 50px;
+  /* width: fit-content; */
+  text-align: center;
+  color: #403F3F;
+  font-weight: 600;
+  border-radius: 9px;
+}
