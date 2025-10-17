@@ -8,7 +8,7 @@ const Category = () => {
     console.log(categoryData);
     return (
         <div>
-            <div className='flex flex-col gap-5 mt-5 linkss'>
+            <div className='flex flex-row flex-wrap md:flex-col gap-5 mt-5 linkss'>
                 {
                     categoryData.map(data => <NavLink to={`/category/${data.id}`} data={data} className={`font-medium text-xl text-[#9F9F9F]`} key={data.id}>{data.name}</NavLink>)
                 }
