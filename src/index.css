@@ -18,7 +18,7 @@
   font-style: normal;
 }
 
-a.active{
+.linkss a.active{
   background-color: #E7E7E7;
   padding: 10px 50px;
   /* width: fit-content; */

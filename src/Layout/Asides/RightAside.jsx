@@ -1,9 +1,12 @@
 import React from 'react';
+import LoginMethod from '../../Components/LoginMethod/LoginMethod';
+import Socials from '../../Components/Socials/Socials';
 
 const RightAside = () => {
     return (
         <div>
-            <p>This is Right Aside</p>
+            <LoginMethod></LoginMethod>
+            <Socials></Socials>
         </div>
     );
 };
