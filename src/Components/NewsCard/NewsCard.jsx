@@ -41,7 +41,7 @@ const NewsCard = ({ data }) => {
     const formattedDate = formatDate(author.published_date);
 
     // Truncate the details text for the preview
-    const previewText = details.substring(0, 150) + '...';
+    const previewText = details.substring(0, 280) + '...';
 
     return (
         <div className="bg-white rounded-sm border border-[#E7E7E7] overflow-hidden">
@@ -92,7 +92,7 @@ const NewsCard = ({ data }) => {
                 {/* Details and Read More */}
                 <p className="text-sm text-gray-600 leading-relaxed mb-4">
                     {previewText}
-                    <a href="#" className="font-bold text-blue-600 hover:text-blue-700 ml-1">
+                    <a href="#" className="font-bold text-secondary ml-1">
                         Read More
                     </a>
                 </p>
