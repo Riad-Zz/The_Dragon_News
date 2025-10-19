@@ -8,7 +8,7 @@ const Register = () => {
 
     const handleOnsubmit = (e) => {
         e.preventDefault();
-        // console.log("clickedd") ;
+        console.log("clickedd") ;
         const name = e.target.namee.value;
         const image = e.target.image.value;
         const email = e.target.email.value;

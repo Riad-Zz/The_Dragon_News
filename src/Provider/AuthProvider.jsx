@@ -1,6 +1,7 @@
 import React, { createContext, useEffect, useState } from 'react';
 import { app } from '../Firebase/firebase.config';
-import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signOut } from "firebase/auth";
+import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth";
+import Login from '../Components/Login/Login';
 
 //step 01 of auth Context -> Create Contetxt ;
 export const AuthContext = createContext() ;
@@ -25,6 +26,12 @@ const AuthProvider = ({children}) => {
             tracking() ;
         }
     },[])
+
+    //------------Login functionaluty for email and password-----------------------
+    const logIn = (email,password) => {
+        return signInWithEmailAndPassword(auth,email,password) ;
+    } 
+
     
     //-------------Logout functionality---------------------------
     const logout = () => {
@@ -38,6 +45,7 @@ const AuthProvider = ({children}) => {
         setUser,
         createUser,
         logout,
+        logIn,
     }
 
     return (
