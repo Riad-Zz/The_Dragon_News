@@ -22,13 +22,13 @@ const Home = () => {
                 </nav>
             </header>
             <main className='max-w-11/12 mx-auto grid grid-cols-1 md:grid-cols-12 mt-7 gap-5'>
-                <aside className=' md:col-span-3'>
+                <aside className=' md:col-span-3 sticky top-7 h-fit'>
                     <LeftAside></LeftAside>
                 </aside>
                 <section className="main-content md:col-span-6">
                     <Outlet></Outlet>
                 </section>
-                <aside className='md:col-span-3'>
+                <aside className='md:col-span-3 sticky top-7 min-h-fit'>
                     <RightAside></RightAside>
                 </aside>
             </main>

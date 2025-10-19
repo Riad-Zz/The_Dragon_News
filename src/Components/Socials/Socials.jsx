@@ -19,8 +19,6 @@ const Socials = () => {
                 <div className='rounded-full text-2xl bg-[#F3F3F3] p-2 bg-gradient-to-b from-[#D82D7E] to-[#FBA756] text-white'><FaInstagram></FaInstagram></div>
                 <div className='font-medium text-[#706F6F]'>Instagram</div>
             </div>
-            
-
         </div>
     );
 };
