@@ -10,6 +10,7 @@ const auth = getAuth(app) ;
 const AuthProvider = ({children}) => {
 
     const [user,setUser] = useState(null) ;
+    const [loading,setLoading] = useState(true) ;
 
 
     //----------Creating new User with Email and password------------------ 
@@ -21,6 +22,7 @@ const AuthProvider = ({children}) => {
     useEffect(()=>{
         const tracking = onAuthStateChanged(auth,(currentUser) => {
             setUser(currentUser) ;
+            setLoading(false) ;
         })
         return()=>{
             tracking() ;
@@ -46,6 +48,7 @@ const AuthProvider = ({children}) => {
         createUser,
         logout,
         logIn,
+        loading,
     }
 
     return (
