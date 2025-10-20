@@ -1,14 +1,17 @@
 import React from 'react';
-import { Outlet } from 'react-router';
+import { Outlet, useNavigation } from 'react-router';
 import Header from '../Components/Header/Header';
 import LatestNews from '../Components/LatestNews/LatestNews';
 import Navbar from '../Components/Navabr/Navbar';
 import LeftAside from './Asides/LeftAside';
 import RightAside from './Asides/RightAside';
+import { HashLoader } from 'react-spinners';
 
 const Home = () => {
+    
     return (
         <div>
+            
             <header>
                 {/* Top Header  */}
                 <Header></Header>
