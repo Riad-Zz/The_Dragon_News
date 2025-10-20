@@ -1,6 +1,7 @@
 import React from 'react';
 // 1. Missing Imports: Need to import the icons used in the component
 import { FaStar, FaRegBookmark, FaShareAlt, FaEye } from 'react-icons/fa';
+import { Link } from 'react-router';
 
 // --- Helper Functions and Components (Needed for the main component to work) ---
 
@@ -92,9 +93,9 @@ const NewsCard = ({ data }) => {
                 {/* Details and Read More */}
                 <p className="text-sm text-gray-600 leading-relaxed mb-4">
                     {previewText}
-                    <a href="#" className="font-bold text-secondary ml-1">
+                    <Link to={`/details/${data.id}`} className="font-bold text-secondary ml-1">
                         Read More
-                    </a>
+                    </Link>
                 </p>
 
                 {/* === Footer (Rating & Views) === */}
